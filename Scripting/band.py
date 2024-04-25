@@ -68,28 +68,3 @@ class BandStructure:
             raise ValueError("Invalid band number.")
         
         return self.k, self.bands[band_number - 1] - self.fermi_energy
-
-
-# Example usage:
-#band_structure = BandStructure()
-
-#dummy_data = np.loadtxt('/Users/pedputra/work/BS_CsPbBr3_SUC/GMRXX1_CsPbBr3.bands.gnu')
-#high_symmetry_points = [
-#    ("Γ", 0.0000),
-#    ("M", 0.7071),
-#    ("X", 1.2071),
-#    ("K", 1.9142),
-#    ("Γ", 2.6213)
-#]
-
-#fermi_energy = 3.5926  # Set your Fermi energy constant
-#band_structure.get_bandstructure(dummy_data, fermi_energy, high_symmetry_points)
-
-#band_structure.plot_band_structure()
-
-# Plot a specific band number (e.g., band 23)
-#band_structure.plot_band_number(23)
-
-# Get coordinates of band points for a specific band (e.g., band 23)
-#band_number = 23
-#band_k, band_energy = band_structure.get_band_data_point(band_number)
